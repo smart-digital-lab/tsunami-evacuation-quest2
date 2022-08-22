@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Timer
+  - CameraShake
+  - ExitTrigger
+  - LeftHand
+  - RightHand
+  - Fire
+  - ExcludeTeleport
+  - TeleportIgnore
+  - ButtonEndGame
+  - Fence
+  - PlayerDetect
+  - Wave
+  - GeoFence
+  - Warning Sphere
+  - Vehicle
+  - VehicleBoundary
+  - XREvents
+  - XRLeft
+  - XRRight
+  - XRMuxEvents
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - OpenXR_UX
+  - Go_Areas
+  - NoGo_Areas
+  - Player
+  - Other_Players
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
