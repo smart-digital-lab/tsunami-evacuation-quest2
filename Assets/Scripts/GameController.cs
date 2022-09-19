@@ -26,6 +26,7 @@ public class GameController : MonoBehaviour
     public GameObject[] earthQuakeSounds;
     public GameObject[] postQuakeSounds;
     public GameObject[] postQuakeObjects;
+    public GameObject[] dangerSounds;
     public GameObject[] tsunamiObjects;
     public GameObject[] underWaterObjects;
     public GameObject[] tsunamiSounds;
@@ -282,6 +283,7 @@ public class GameController : MonoBehaviour
     void Touch_Vehicle()
     {
         Debug.Log ("Touch Vehicle");
+        PlaySounds(dangerSounds, true, false);
         if (current_state == game_states.after_eq)
         {
             timer -= 12.0f;
@@ -302,6 +304,7 @@ public class GameController : MonoBehaviour
     // ------------------------------------------------------------------------------------------------------------------------------------------------------
     void Touch_DangerPoint()
     {
+        PlaySounds(dangerSounds, true, false);
         Debug.Log ("Touch Dangerpoint");
         timer -= 6.0f;
     }
@@ -589,6 +592,9 @@ public class GameController : MonoBehaviour
                     SendEvent(ref theGame, game_events.reset);
                     break;
                 case ".":
+                    SendEvent(ref theGame, game_events.reset);
+                    break;
+                case " ":
                     SendEvent(ref theGame, game_events.reset);
                     break;
                 case "DROWN":
